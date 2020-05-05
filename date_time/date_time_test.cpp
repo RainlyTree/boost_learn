@@ -18,7 +18,15 @@ int main()
     date d6(from_string("2015/1/1"));
     date d7 = from_undelimited_string("20011118");
 
+    //显示当前日期
     cout << day_clock::local_day() << endl;
     cout << day_clock::universal_day() << endl;
+
+
+    //日期输出
+    cout << to_simple_string(d2) << endl;
+    cout << to_iso_string(d2) << endl;
+    cout << to_iso_extended_string(d2) << endl;
+    cout << d2 << endl;
     return 0;
 }
