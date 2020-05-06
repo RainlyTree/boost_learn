@@ -43,5 +43,12 @@ int main()
     date d8 = date_from_tm(t);
     cout << d8 << endl;
 
+    //日期运算 以date d4为例 2010 1 1 
+    //需要注意  如果是月末 则加减月份依然到当前月份的月末 所以需要注意 当为28 29时 加减到二月份 则随后运算就是月末操作
+    d4 += days(30);
+    cout << "year : month : day :" << d4.year() << " " << d4.month() << " " << d4.day() << endl;
+    d4 += months(1);
+    cout << "year : month : day :" << d4.year() << " " << d4.month() << " " << d4.day() << endl;
+
     return 0;
 }
